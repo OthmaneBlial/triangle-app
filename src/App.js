@@ -33,11 +33,11 @@ class App extends Component {
 
   findsOutTriangleType() {
     const { sideOne, sideTwo, sideThree } = this.state.values;
-    if (sideOne === sideTwo || sideTwo !== sideThree || sideTwo !== sideThree)
-      this.setState({ type: "Isosceles" });
     if (sideOne === sideTwo && sideTwo === sideThree)
       this.setState({ type: "Equilateral" });
-    if (sideOne !== sideTwo && sideTwo !== sideThree)
+    else if ((sideOne === sideTwo) || (sideTwo === sideThree) || (sideOne === sideThree))
+      this.setState({ type: "Isosceles" });
+    else
       this.setState({ type: "Scalene" });
   }
 
