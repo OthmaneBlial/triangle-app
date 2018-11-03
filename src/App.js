@@ -110,7 +110,7 @@ class App extends Component {
                         errors.sideTwo && touched.sideTwo ? "ts-error" : ""
                       }
                     >
-                      <span>Side One</span>
+                      <span>Side Two</span>
                       <input
                         type="number"
                         name="sideTwo"
@@ -133,7 +133,7 @@ class App extends Component {
                         errors.sideThree && touched.sideThree ? "ts-error" : ""
                       }
                     >
-                      <span>Side One</span>
+                      <span>Side Three</span>
                       <input
                         type="number"
                         name="sideThree"
